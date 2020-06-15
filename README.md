@@ -1,6 +1,9 @@
 # DankMemer-Macro
 TO-USE-THIS, You must need python3, pip and pynput.
 
+
+https://pip.pypa.io/en/stable/installing/#do-i-need-to-install-pip
+
 To-use-the-bot-at-full-potential. You will need a fishing rod(15,000), You will need a hunting rifle(15,000) take off # from the 180th line to 187th.
 
 This bot is very simple macro .
