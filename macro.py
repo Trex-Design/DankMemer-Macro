@@ -9,7 +9,7 @@ from threading import Thread
 keyboard = Controller()
 
 nerd = ['n','e','r','d']
-#random time generators
+#random time generators,IGNORE THIS DONT CHANGE ANYTHING
 class random_genrator:
     random_number_depall = random.choice([2 , 2.25, 2.5, 2.75 ])
     number_1sec = random.choice([1 , 1.25, 1.5, 1.75 ])
@@ -24,13 +24,7 @@ class random_genrator:
     random_laptop_buyer = random.choice([60.21*60, 60.1*60, 60.23*60, 60.24*60, 60.45*60, 60.6*60])
     nerd_randomselector = random.choice(nerd)
 
-class nerdnibba():
-    def nibba():
-        while True:
-            lol = random.choice(nerd)
-            time.sleep(.5)
-            keyboard.type(lol)
-
+#does pls beg
 def pls_beg():
     while True:
         time.sleep(random_genrator.number_1sec+8)
@@ -39,48 +33,52 @@ def pls_beg():
         keyboard.release(Key.enter)#simulates the press of the enter key
         time.sleep(random_genrator.random_number_plsbeg) #waits 40 - 42.5
 
+#does pls postmeme
 def postmeme():
     time.sleep(.5)
     while True:
-        lol = random.choice(nerd)
-        keyboard.type('pls postmeme')
+        lol = random.choice(nerd)#declares a variable so it can pick betweem n,e,r,d and it makes it random
+        keyboard.type('pls postmeme')#types pls postmeme
         keyboard.press(Key.enter)
-        keyboard.release(Key.enter)
-        time.sleep(random_genrator.number_1sec)
-        keyboard.type(lol)
+        keyboard.release(Key.enter)#releases enter
+        time.sleep(random_genrator.number_1sec)#waits random amnt of time before picking (n,e,r,d)
+        keyboard.type(lol)#types it
         keyboard.press(Key.enter)
-        keyboard.release(Key.enter)
-        time.sleep(random_genrator.random_number_postmeme)
-
+        keyboard.release(Key.enter)#releases enter
+        time.sleep(random_genrator.random_number_postmeme)#waits a min
+#does please hunt
 def hunt():
     while True:
-        time.sleep(random_genrator.random_number_depall*8)
-        keyboard.type('pls hunt')
+        time.sleep(random_genrator.random_number_depall*8)#waits for all the other commands to be typed out.
+        keyboard.type('pls hunt')#types pls hunt
         keyboard.press(Key.enter)
-        keyboard.release(Key.enter)
-        time.sleep(random_genrator.random_number_postmeme*5)
+        keyboard.release(Key.enter)#releases enter
+        time.sleep(random_genrator.random_number_postmeme*5)#types every 5min because these things can break easily
 
 
-
+#does fishing 
 def fishing():
     while True:
-        time.sleep(random_genrator.number_1sec*5)
-        keyboard.type('pls fish')
+        time.sleep(random_genrator.number_1sec*5)#waits for other commands to be written out.
+        keyboard.type('pls fish')#types pls fish
         keyboard.press(Key.enter)
-        keyboard.release(Key.enter)
-        time.sleep(random_genrator.random_number_plsfish*10)
+        keyboard.release(Key.enter)#releases enter
+        time.sleep(random_genrator.random_number_plsfish*10)#waits 7 mins becuz fishing stick break easily.
 
+#buys laptop
 def laptopbuyer():
     while True:
-        time.sleep(random_genrator.random_buytime*30)
-        keyboard.type('pls withdraw 1500')
+        time.sleep(random_genrator.random_buytime*60)#waits 30mins to buy a laptop because, we neede postmeme so 7ya.
+        keyboard.type('pls withdraw 1500')#types out pls withdraw 1500
         keyboard.press(Key.enter)
-        keyboard.release(Key.enter)
-        time.sleep(random_genrator.number_1sec)
-        keyboard.type('pls buy laptop')
+        keyboard.release(Key.enter)#releases enter
+        time.sleep(random_genrator.number_1sec)#waits abt 1sec(also random)
+        keyboard.type('pls buy laptop')#types out pls buy laptop
         keyboard.press(Key.enter)
-        keyboard.release(Key.enter)
+        keyboard.release(Key.enter)#releases enter
 
+#REMOVE THE # that start at line 178
+#sells most of the thing we get from pls beg, pls hunt and pls fish
 class inventory_sell:
     def sell_pill():
         while True:
@@ -152,14 +150,14 @@ class inventory_sell:
             keyboard.type('pls sell boar all')
             keyboard.press(Key.enter)
             keyboard.release(Key.enter)
-
+            
     def sell_deer():
         while True:
             time.sleep(random_genrator.random_selltime1 * 23)
             keyboard.type('pls sell deer all')
             keyboard.press(Key.enter)
             keyboard.release(Key.enter)
-
+            
     def dep_all():
         while True:
             time.sleep(random_genrator.random_buytime+2.5)
@@ -172,16 +170,16 @@ if __name__ == '__main__':
     Thread(target = postmeme).start()
     Thread(target = pls_beg).start()
     Thread(target = laptopbuyer).start()
-    #Thread(target = fishing).start()
     Thread(target = inventory_sell.sell_pill).start()
     Thread(target = inventory_sell.sell_bread).start()
     Thread(target = inventory_sell.sell_alcohol).start()
     Thread(target = inventory_sell.sell_cookie).start()
-    Thread(target = inventory_sell.sell_rabbit).start()
-    Thread(target = inventory_sell.sell_boar).start()
-    Thread(target = inventory_sell.sell_skunk).start()
-    Thread(target = inventory_sell.sell_duck).start()
+    Thread(target = inventory_sell.dep_all).start()
+    #Thread(target = inventory_sell.sell_rabbit).start()
+    #Thread(target = inventory_sell.sell_boar).start()
+    #Thread(target = inventory_sell.sell_skunk).start()
+    #Thread(target = inventory_sell.sell_duck).start()
     #Thread(target = hunt).start()
     #Thread(target = inventory_sell.sell_fish).start()
-    Thread(target = inventory_sell.dep_all).start()
-    Thread(target = inventory_sell.sell_deer).start()
+    #Thread(target = inventory_sell.sell_deer).start()
+    #Thread(target = fishing).start()  
