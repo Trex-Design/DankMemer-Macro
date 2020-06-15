@@ -31,8 +31,6 @@ purposly mixes up commandsd to avoid ban.
 
 my first project.
 
-it would mean alot if you guys give me feedback.
-
 sells items that you gain from pls beg, pls fish and pls hunt.
 
 # Goals For This Project:
@@ -41,3 +39,5 @@ sharpening my basic python skills.
 helping people out, who are new to this bot.
 
 attempting to learn data science things.
+
+it would mean alot if you guys give me feedback.
