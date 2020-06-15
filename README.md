@@ -14,7 +14,7 @@ To install pip in MacoOS.
 To install pynput.
 'pip3 install pynput' in the terminal
 
-To-use-the-bot-at-full-potential. You will need a fishing rod(15,000), You will need a hunting rifle(15,000) take off # from the 180th line to 187th.
+To-use-the-bot-at-full-potential. You will need a fishing rod(15,000), You will need a hunting rifle(15,000) take off # from the 178th line to 185th.
 
 This bot is very simple macro .
   uses random generated timings.
