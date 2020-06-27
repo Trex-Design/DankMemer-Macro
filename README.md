@@ -20,18 +20,14 @@ To install pynput.
 'pip3 install pynput' in the terminal
 
 # IMPORTANT READ TO RUN
-To-use-the-bot-at-full-potential. You will need a fishing rod(15,000), You will need a hunting rifle(15,000) take off # from the 178th line to 185th.
+To-use-the-bot-at-full-potential. You will need a fishing rod(15,000), You will need a hunting rifle(15,000) take off # from 94 and 95
 
 # Some features of this macro
 This bot is very simple macro .
 
 uses random generated timings.
 
-purposly mixes up commandsd to avoid ban.
-
-my first project.
-
-sells items that you gain from pls beg, pls fish and pls hunt.
+uses basic data science
 
 # Goals For This Project:
 sharpening my basic python skills.
